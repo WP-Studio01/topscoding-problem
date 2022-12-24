@@ -4,19 +4,20 @@
 #define flush ""
 using namespace std;
 /*头部数据*/
+string a[55];
 int main() {
 	/*头部脚本*/
  	ios::sync_with_stdio(false);
 	cin.tie(0);
 	cout.tie(0);
 	/*主体代码开始*/
-	string s;
-	cin>>s;
-	sort(s.begin(),s.end());
-	reverse(s.begin(),s.end());
-	cout<<"Max:"<<s<<endl;
-	reverse(s.begin(),s.end());
-	cout<<"Min:"<<s<<endl;
+	int n;
+	cin>>n;
+	for(int i=1;i<=n;i++)
+	{
+		cin>>a[i];
+	}
+	
 	return 0;
 }
 
